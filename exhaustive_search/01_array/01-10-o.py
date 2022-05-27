@@ -7,14 +7,12 @@ def main():
 
     # compute
     cas = Counter(As)
-    print(cas)
     target = cas[As[0]]
     ans = As[0]
     for key, val in cas.items():
-        print(key, val, ans, target)
         if target < val:
             ans = key
-        target = val
+            target = val
 
     # output
     print(ans)
